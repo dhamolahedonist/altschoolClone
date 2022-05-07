@@ -1,0 +1,277 @@
+
+
+
+:root {
+    --color-primary: #0d1825;
+    --color-secondary: #0d60d8;
+    --color-font: ##0f0f19;
+    --color-text: #bbb;
+}
+
+*,
+*::after,
+::before {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    /* 62.5% of 16px =10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.9;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--font-color);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    height: 100px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+.logo {
+    margin-top: 3rem;
+}
+.logo > img {
+    height: 90px;
+    width: 90px;
+}
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: #0d1825;
+}
+
+nav .menu-btn i {
+    color: #000;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #0f0f19;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 15px 14px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    /* margin-left: 1rem; */
+}
+nav .active {
+    border-radius: 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #fff;
+    background: #1b1b1b;
+}
+#container {
+    text-align: center;
+    color:#fff;
+    font-size: 16px;
+    padding: 5px 5px;
+    background: #6772e5;
+}
+.contain-box {
+    text-align: center;
+    margin-top: 5rem;
+}
+.contain-box span {
+    color: #6772e5;
+}
+.btn {
+    opacity: 1;
+    transition: 0.3s;
+    font-size: 16px;
+    padding: 20px 60px;
+    font-weight: 400;
+    letter-spacing: 1.2px;  
+}
+.box {
+    text-align: center;
+    margin-top: 5rem;
+}
+.btn-primary {
+    background: #000;
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #1b1b1b;
+    opacity: 1;
+    transition: 1s;
+}
+.contain-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 325px;
+    margin-top: 5rem;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+}
+.contain-item h2{
+    margin-left: 10rem;
+    margin-top: 4rem;
+}
+.contain-item p{
+    line-height: 3.2rem;
+    margin-top: 3rem;
+}
+.contain-item .box-img {
+            position: absolute;
+            top: unset;
+        bottom: -10.8rem;
+        right: 0px;
+        left: unset;
+        transform: rotateY(180deg);
+
+}
+@media (max-width: 768px) {
+    
+    nav .menu-btn i {
+        display: block;
+    }
+
+    .links {
+        height: 0;
+        overflow: hidden;
+        transition: transform 1s ease-out;
+        
+    }
+
+    .show-links{
+        height: auto;
+        transition: transform 1s ease-out;
+      
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: #271871;
+        height: 100%;
+        width: 100%;
+        display: block;
+        /* text-align: center; */
+    }
+    nav ul li a {
+        color: #0f0f19;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0px;
+        padding: 5px 5px;
+        transition: all 0.3s ease;
+        /* margin-left: 1rem; */
+    }
+
+    nav ul li {
+        margin: 40px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        display: block;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        color: #fff;
+        background: none;
+        text-align: center;
+    }
+    .nav-item > a {
+        color: #fff;
+        text-align: center;
+    }
+    nav ul li a.active {
+        color: #fff;
+        background: #1b1b1b;
+        padding: 5px; 
+    }
+    .links a {
+        font-size: 20px;
+        
+    }
+    .logo{
+        margin: 0px;
+    }
+    .links .nav-item {
+        line-height: 0;
+        padding: none;
+        border: none;
+
+    }
+    .contain-box {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 5rem;
+    }
+    .contain-box h2 {
+        font-size: 26px;
+    }
+}
