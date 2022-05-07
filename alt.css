@@ -277,6 +277,7 @@ nav ul li a.active {
     .contain-item{
         display: block;
         height: auto;
+        margin-bottom: 3rem;
     }
     .contain-item h2{
         display: block;
@@ -289,7 +290,7 @@ nav ul li a.active {
         margin-left: 1rem;
         font-size: 20px;
         line-height: 3rem;
-        line-break: 0px;
+        padding-bottom: 3rem;
     }
     .box-image{
         display: none;
