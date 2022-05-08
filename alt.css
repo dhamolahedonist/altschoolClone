@@ -189,8 +189,89 @@ nav ul li a.active {
         transform: rotateY(180deg);
 
 }
-@media (max-width: 768px) {
+.product-info {
+    padding-top: 7rem;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.product-info h2{
+    font-size: 30px;    
+}
+.product-info p {
+    font-size: 18px;
+    line-height: 3rem;
+}
+.product-school{
+    padding-top: 7rem;
+    text-align: center;
+    padding-bottom: 5rem;
+    height: 300px;
+    background: #fff6ee;
     
+}
+.product-school h2{
+    font-size: 25px;
+}
+.product-class{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.boxes{
+    width: 250px;
+    height: 70px; 
+    box-shadow: 0 0 1px 1px #000;
+    background: #fafaff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1.5rem;
+    cursor: pointer;
+}
+.product-class .boxes.active{
+    background: #6a6ff5;
+    color: #fff;
+    
+}
+.box-2:hover{
+    background: #6a6ff5;
+    color: #fff;
+    transition: all 0.3s ease;
+    
+}
+.box-3:hover {
+    background: #6a6ff5;
+    color: #fff;
+    transition: all 0.3s ease;
+
+}
+.container-item {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 300px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 3rem;
+}
+
+.container-item h2 {
+    margin-left: 10rem;
+    margin-top: 4rem;
+}
+
+.container-item p {
+    line-height: 3.2rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    /* nav{
+        background: #271871;
+        overflow: hidden;
+    }
+    nav .menu-btn{
+        background: #fff;
+    } */
     nav .menu-btn i {
         display: block;
     }
@@ -295,4 +376,27 @@ nav ul li a.active {
     .box-image{
         display: none;
     }
+    .product-school .boxes{
+        display: none;
+    }
+        .container-item {
+            display: block;
+            height: auto;
+            margin-bottom: 3rem;
+        }
+    
+        .container-item h2 {
+            display: block;
+            margin-left: 1rem;
+            font-size: 30px;
+            padding-top: 3rem;
+        }
+    
+        .container-item p {
+            display: block;
+            margin-left: 1rem;
+            font-size: 20px;
+            line-height: 3rem;
+            padding-bottom: 3rem;
+        }
 }

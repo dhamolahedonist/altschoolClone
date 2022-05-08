@@ -12,6 +12,7 @@ menuToggle.addEventListener('click', function() {
 });
 
 const navBar = document.getElementById('nav');
+const activeClass = document.querySelector('.active')
 window.addEventListener('scroll', function() {
     const scrollHeight = window.pageYOffset;
     const navHeight = navBar.getBoundingClientRect().height;
@@ -21,8 +22,17 @@ window.addEventListener('scroll', function() {
     else {
         navBar.classList.remove('fixed-nav');
     }
+    if(scrollHeight > navHeight) {
+        activeClass.style.background = 'Blue';
+    }
+     else {
+        activeClass.style.background = '#000';
+    }
 })
 
+menuToggle.addEventListener('click', function(){
+    navBar.style.color = 'blue';
+    console.log(navBar)
+})
 
-const items = document.querySelector('.container p')
 
