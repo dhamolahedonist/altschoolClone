@@ -133,14 +133,14 @@ nav ul li a.active {
     background: #fff;
     height: 400px;
 }
-#container {
+.container {
     text-align: center;
     color:#fff;
     font-size: 16px;
     padding: 5px 5px;
     background: #6772e5;
 }
-#container p{
+.container p{
     animation: spin_words 6s infinite;
 }
 @keyframes spin_words{
@@ -394,6 +394,9 @@ nav ul li a.active {
     .contain-box span::after{
         animation: none;
         border-left: none;
+    }
+    .contain-box span {
+        display: none;
     }
     #contain-element{
         background: #fff6ee;

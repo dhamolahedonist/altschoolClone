@@ -1,6 +1,8 @@
 const menuToggle = document.querySelector('.menu-btn');
 const links = document.querySelector('.links');
-
+const container = document.querySelector('.container')
+const containBox = document.querySelector('.contain-box')
+const box = document.querySelector('.box')
 menuToggle.addEventListener('click', function() {
     // if (links.classList.contains('show-links')) {
     //     links.classList.remove('show-links');
@@ -9,7 +11,25 @@ menuToggle.addEventListener('click', function() {
     //     links.classList.add('show-links');
     // }
     links.classList.toggle('show-links');
+    if(links.classList.contains('show-links')){
+        container.style.display = 'none';
+    }else{
+        container.style.display = 'block';
+    }
+    if(links.classList.contains('show-links')){
+        containBox.style.display = 'none';
+    }else{
+        containBox.style.display = 'block';
+    }
+    if(links.classList.contains('show-links')){
+        box.style.display = 'none';
+    }else{
+        box.style.display = 'block';
+    }
+
 });
+
+
 
 const navBar = document.getElementById('nav');
 const activeClass = document.querySelector('.active')
