@@ -71,7 +71,7 @@ a {
 
 nav {
     height: 100px;
-    background: #fff;
+    background: #fff6ee;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -218,7 +218,7 @@ nav ul li a.active {
 .box-image .box-img {
         position: absolute;
         top: unset;
-        bottom: -10.8rem;
+        /* bottom: -10.8rem; */
         right: 0px;
         left: unset;
         transform: rotateY(180deg);
@@ -297,6 +297,28 @@ nav ul li a.active {
 .container-item p {
     line-height: 3.2rem;
     margin-top: 3rem;
+}
+.reader{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#about h6{
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+}
+#about h5{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.partner{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 3rem;
+}
+.partner h2{
+    padding-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -450,5 +472,13 @@ nav ul li a.active {
             font-size: 20px;
             line-height: 3rem;
             padding-bottom: 3rem;
+        }
+        .reader img{
+            object-fit: cover;
+            max-width: 95%;
+            max-height: 100%;   
+        }
+        #about h6{
+            margin-left: 1rem;
         }
 }

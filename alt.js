@@ -26,6 +26,9 @@ menuToggle.addEventListener('click', function() {
     }else{
         box.style.display = 'block';
     }
+    //  if(links.classList.contains('show-links')){
+    //     navBar.classList.add('fixed-nav');
+    // }
 
 });
 
