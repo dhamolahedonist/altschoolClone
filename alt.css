@@ -129,6 +129,10 @@ nav ul li a.active {
     color: #fff;
     background: #1b1b1b;
 }
+#contain-element{
+    background: #fff6ee;
+    height: 400px;
+}
 #container {
     text-align: center;
     color:#fff;
@@ -383,6 +387,13 @@ nav ul li a.active {
         font-size: 16px;
         margin-top: 5rem;
         background: #fff6ee;
+    }
+    .contain-box h2{
+        padding-top: 2rem;
+    }
+    .contain-box span::after{
+        animation: none;
+        border-left: none;
     }
     .box {
         background: #fff6ee;
