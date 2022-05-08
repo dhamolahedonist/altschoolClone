@@ -395,6 +395,9 @@ nav ul li a.active {
         animation: none;
         border-left: none;
     }
+    #contain-element{
+        background: #fff6ee;
+    }
     .box {
         background: #fff6ee;
     }
