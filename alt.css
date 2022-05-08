@@ -25,6 +25,7 @@ body {
     font-family: "DM Sans", sans-serif;
     font-size: 2.4rem;
     line-height: 1.9;
+    background: #fff;
 }
 
 h1,
@@ -135,9 +136,39 @@ nav ul li a.active {
     padding: 5px 5px;
     background: #6772e5;
 }
+#container p{
+    animation: spin_words 6s infinite;
+}
+@keyframes spin_words{
+    10%{
+        transform: translateX(-5%);
+        scroll-behavior: smooth;
+
+    }
+}
 .contain-box {
     text-align: center;
     margin-top: 5rem;
+}
+.contain-box span{
+    position: relative;
+}
+.contain-box span::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background: #fff;
+    width: 100%;
+    border-left: 3px solid #fff6ee;
+    animation: typing 2.5s steps(15) infinite ;
+}
+@keyframes typing {
+    40%,60%{
+        left: calc(100%);
+        margin: 0 -20px 0 20px;
+    }
+
 }
 .contain-box span {
     color: #6772e5;
@@ -351,6 +382,9 @@ nav ul li a.active {
         text-align: center;
         font-size: 16px;
         margin-top: 5rem;
+        background: #fff6ee;
+    }
+    .box {
         background: #fff6ee;
     }
     .contain-box h2 {
