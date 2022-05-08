@@ -351,6 +351,7 @@ nav ul li a.active {
         text-align: center;
         font-size: 16px;
         margin-top: 5rem;
+        background: #fff6ee;
     }
     .contain-box h2 {
         font-size: 26px;
