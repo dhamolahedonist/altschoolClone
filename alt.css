@@ -620,8 +620,8 @@ nav ul li a:hover{
             padding: 20px 100px;
         }
         .btn-2:hover {
-            opacity: 1;
-            transition: 1s;
+            opacity: 0;
+            transition: 0;
             box-shadow: none;
         }
         .main-container {
@@ -635,7 +635,7 @@ nav ul li a:hover{
             padding-bottom: 5px;
         }
         .wrap {
-               width: 320px;
+               width: 350px;
                height: 450px;
                display: flex;
                align-items: center;
