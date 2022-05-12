@@ -128,6 +128,13 @@ nav ul li a:hover,
 nav ul li a.active {
     color: #fff;
     background: #1b1b1b;
+    
+}
+nav ul li a:hover{
+    box-shadow: 0 10px 10px #1b1b1b;
+    opacity: 1;
+    transition: 1s;
+
 }
 #contain-element{
     background: #fff;
@@ -197,6 +204,7 @@ nav ul li a.active {
     background: #1b1b1b;
     opacity: 1;
     transition: 1s;
+    box-shadow: 0 10px 10px #1b1b1b;
 }
 .contain-item {
     display: grid;
@@ -354,6 +362,84 @@ nav ul li a.active {
     background: #000;
     color: #fff;
     margin-top: 2rem;
+}
+.btn-container{
+    margin-bottom: 3rem;
+}
+.btn-2:hover{
+    opacity: 1;
+    transition: 1s;
+    box-shadow: 0 10px 10px #1b1b1b;
+}
+.btn-2 a {
+    color: #fff;
+    font-weight: lighter;
+}
+.school-search{
+    text-align: center;
+}
+.school-search h2{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container a{
+    color: #6a6ff5;
+    font-size: 16px;
+}
+.contain{
+    position: relative;
+    margin: 100px;
+    text-align: left;
+}
+.contain p{
+    font-size: 16px;
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 10rem;
+}
+
+.wrap{
+    width: 550px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.wrap-1{
+    border: 2px solid #000;
+    background:linear-gradient(120deg, #fff6ee, #fff6ee);
+}
+.wrap-2 {
+    border: 3px solid #000;
+    background: linear-gradient(-100deg, #fff6ee, #fff);
+}
+.example1 .wrap-1{
+    z-index: 11;
+}
+.example1 .wrap-2{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 1;
+}
+.example2 .wrap-1 {
+    z-index: 11;
+}
+
+.example2 .wrap-2 {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 1;
 }
 @media (max-width: 768px) {
     /* nav{
@@ -517,11 +603,13 @@ nav ul li a.active {
         }
         .more-info{
             display: block;
+            margin-left: 2rem;
         }
-                .more-info h2 {
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    position: unset;
-                }
+        .more-info h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: unset;
+            
+        }
         .more-info h2:after{
             display: none;
         }
@@ -530,5 +618,29 @@ nav ul li a.active {
         }
         .btn-2{
             padding: 20px 100px;
+        }
+        .main-container {
+            display: block;
+            /* text-align: center; */
+        }
+        .contain{
+            margin: 20px;
+        }
+        .contain p{
+            padding-bottom: 5px;
+        }
+        .wrap {
+               width: 400px;
+               height: 400px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+           }
+        .wrap p{
+            font-size: 14px;
+            padding-top: 2rem;
+        }
+        .contain .example1{
+            padding-bottom: 10rem;
         }
 }

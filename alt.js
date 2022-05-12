@@ -3,6 +3,7 @@ const links = document.querySelector('.links');
 const container = document.querySelector('.container')
 const containBox = document.querySelector('.contain-box')
 const box = document.querySelector('.box')
+const mainContainer = document.querySelector('.main-container')
 menuToggle.addEventListener('click', function() {
     // if (links.classList.contains('show-links')) {
     //     links.classList.remove('show-links');
@@ -26,6 +27,11 @@ menuToggle.addEventListener('click', function() {
     }else{
         box.style.display = 'block';
     }
+    if(links.classList.contains('show-links')){
+        mainContainer.style.display = 'none';
+    }else{
+        mainContainer.style.display = 'block';
+    }
     //  if(links.classList.contains('show-links')){
     //     navBar.classList.add('fixed-nav');
     // }
@@ -46,7 +52,7 @@ window.addEventListener('scroll', function() {
         navBar.classList.remove('fixed-nav');
     }
     if(scrollHeight > navHeight) {
-        activeClass.style.background = 'Blue';
+        activeClass.style.background = '#6a6ff5';
     }
      else {
         activeClass.style.background = '#000';
@@ -55,7 +61,6 @@ window.addEventListener('scroll', function() {
 
 menuToggle.addEventListener('click', function(){
     navBar.style.color = 'blue';
-    console.log(navBar)
 })
 
 
