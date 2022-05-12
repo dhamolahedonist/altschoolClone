@@ -620,7 +620,7 @@ nav ul li a:hover{
             padding: 20px 100px;
         }
         .btn-2:hover {
-            opacity: 0;
+            opacity: none;
             transition: 0;
             box-shadow: none;
         }
