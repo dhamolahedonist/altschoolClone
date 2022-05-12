@@ -619,6 +619,11 @@ nav ul li a:hover{
         .btn-2{
             padding: 20px 100px;
         }
+        .btn-2:hover {
+            opacity: 1;
+            transition: 1s;
+            box-shadow: none;
+        }
         .main-container {
             display: block;
             /* text-align: center; */
@@ -630,8 +635,8 @@ nav ul li a:hover{
             padding-bottom: 5px;
         }
         .wrap {
-               width: 400px;
-               height: 400px;
+               width: 320px;
+               height: 450px;
                display: flex;
                align-items: center;
                justify-content: center;
