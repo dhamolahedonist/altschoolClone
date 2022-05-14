@@ -463,6 +463,8 @@ nav ul li a:hover{
     height: 600px;
     background:url(https://altschoolafrica.com/_next/static/images/preparebg-8d87f66a66922c77e694bc6774bf9c31.jpg) no-repeat;
     object-fit: cover;
+    background-size: auto;
+    
 }
 .right{
     width: 100%;
@@ -484,7 +486,81 @@ nav ul li a:hover{
 .content p{
     font-size: 18px;
     line-height: 3rem;
-   
+}
+.content{
+    text-align: left;
+}
+.faq{
+    background-color: #000;
+    height: auto;
+    margin-bottom: 5rem;
+}
+.faq h2{
+    color: #fff;
+    padding-top: 5rem;
+}
+.faq-1{
+    background-color: #0d0d0d;
+    color: #fff;
+    margin: 1rem 7rem;
+    text-align: left;
+    padding: 3rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}
+.faq-1 h3{
+    padding-bottom: 3rem;
+}
+.faq-1 p{
+    font-size: 20px;
+    color: #c6c6b5;
+}
+.brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.brands img{
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+}
+.collaborate{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 10rem;
+}
+.collab-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff6ee;
+    text-align: left;
+}
+.collab{
+    background-color: #000;
+    width: 60%;
+    height: 500px;
+    color: #fff;
+    padding-top: 7rem;
+    padding-left: 3rem;
+}
+.collab p {
+    font-size: 20px;
+    line-height: 2.5rem;
+}
+.collaborate-img{
+    width: 40%;
+    height: 500px;
+    background: url(https://altschoolafrica.com/_next/static/images/collab-f2eb368cd3bfe1f1437509e2d75bafaa.png) no-repeat;
+    object-fit: cover;
+    background-size: auto;
 }
 @media (max-width: 768px) {
     /* nav{
@@ -709,6 +785,36 @@ nav ul li a:hover{
         .content p{
             font-size: 15px;
             line-height: 2rem;
+        }
+        .faq-1 {
+            background-color: #000;
+            color: #fff;
+            font-size: 16px;
+            margin: 0 0;
+        }
+        .brands {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+                    
+        }
+        .brands img {
+            height: 50px;
+            width: 80px;
+            object-fit: contain;
+            padding-left: 20px;
+        }
+        .collaborate-img{
+            display: none;
+        }
+        .collab {
+            background-color: #000;
+            width: 300px;
+            height: 500px;
+            color: #fff;
+            padding-top: 7rem;
+            padding-left: 3rem;
         }
         
     
