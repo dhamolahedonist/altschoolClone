@@ -79,6 +79,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0px 50px 0px 100px;
+    
 }
 .logo {
     margin-top: 3rem;
@@ -392,6 +393,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .main-container a{
@@ -433,7 +435,7 @@ nav ul li a:hover{
     position: absolute;
     top: 30px;
     left: 20px;
-    z-index: 1;
+    z-index: 1000;
 }
 .example2 .wrap-1 {
     z-index: 11;
@@ -889,8 +891,15 @@ nav ul li a:hover{
             padding-top: 7rem;
             padding-left: 3rem;
         }
-        .footer-section{
+        #footer{
+            background-color: #000;
+            height: auto;
+        }
+        #footer .list{
+            display: flex;
             flex-flow: column;  
+            padding-bottom: 3rem;
+            
         }
         
 
