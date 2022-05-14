@@ -4,6 +4,7 @@ const container = document.querySelector('.container')
 const containBox = document.querySelector('.contain-box')
 const box = document.querySelector('.box')
 const mainContainer = document.querySelector('.main-container')
+
 menuToggle.addEventListener('click', function() {
     // if (links.classList.contains('show-links')) {
     //     links.classList.remove('show-links');
@@ -42,6 +43,8 @@ menuToggle.addEventListener('click', function() {
 
 const navBar = document.getElementById('nav');
 const activeClass = document.querySelector('.active')
+const boxImage = document.querySelector('.box-image')
+console.log(boxImage)
 window.addEventListener('scroll', function() {
     const scrollHeight = window.pageYOffset;
     const navHeight = navBar.getBoundingClientRect().height;
@@ -57,6 +60,7 @@ window.addEventListener('scroll', function() {
      else {
         activeClass.style.background = '#000';
     }
+  
 })
 
 menuToggle.addEventListener('click', function(){

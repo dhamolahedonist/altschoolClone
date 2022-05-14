@@ -27,6 +27,9 @@ body {
     line-height: 1.9;
     background: #fff;
 }
+ul{
+    list-style: none;
+}
 
 h1,
 h2,
@@ -167,8 +170,8 @@ nav ul li a:hover{
 .contain-box span::after{
     content:"";
     position: absolute;
-    left: 0;
-    height: 100%;
+    /* left: 0;
+    height: 100%; */
     background: #fff;
     width: 100%;
     border-left: 3px solid #fff6ee;
@@ -176,7 +179,7 @@ nav ul li a:hover{
 }
 @keyframes typing {
     40%,60%{
-        left: calc(100%);
+        left: calc(95%);
         margin: 0 -20px 0 20px;
     }
 
@@ -562,6 +565,76 @@ nav ul li a:hover{
     object-fit: cover;
     background-size: auto;
 }
+#footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 7rem;
+    background-color: #000;
+    height: 400px;
+    color: #fff;
+    text-align: left;
+    padding-top: 5rem;
+}
+
+#footer .list {
+    display: flex;
+}
+
+#footer {
+    list-style: none;
+    font-size: 16px;
+    line-height: 3rem;
+   
+}
+
+#footer a {
+    color: var(--color-font);
+}
+
+#footer h2 {
+    font-size: 18px;
+}
+
+#footer .list-A {
+    padding: 0 3rem;
+}
+
+#footer .contact {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#footer .number {
+    text-align: right;
+}
+.list h2{
+    color: #fff;
+}
+
+.list-A p{
+    font-size: 15px;
+    padding-top: 3rem;
+
+}
+.list-A li{
+    font-size: 13px;
+}
+.footer-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-A ul li a:hover{
+    color: #c6c6b5;
+    padding-left: 1px;
+}
+.list-A .social-links{
+    display: inline-block;
+    height: 10px;
+    margin: 0 10px 10px 0;
+
+}
+
 @media (max-width: 768px) {
     /* nav{
         background: #271871;
@@ -816,6 +889,9 @@ nav ul li a:hover{
             padding-top: 7rem;
             padding-left: 3rem;
         }
+        .footer-section{
+            flex-flow: column;  
+        }
         
-    
+
 }
