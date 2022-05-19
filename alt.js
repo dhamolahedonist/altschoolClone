@@ -68,3 +68,13 @@ menuToggle.addEventListener('click', function(){
 })
 
 
+// const age = 27
+// console.log(nezzyAge(age))
+
+// function nezzyAge(age){
+//     if(nezzyAge == age){
+//         return true;
+//     }else 
+//     return false;
+// }
+

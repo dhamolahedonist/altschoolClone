@@ -813,6 +813,102 @@ h6 {
     color: #898989;
 }
 
+/* collaborate with us */
+.collab-1 {
+    background-color: #271871;
+    width: 60%;
+    height: 400px;
+    color: #fff;
+    padding-top: 7rem;
+    padding-left: 3rem;
+}
+.collab-1 .btn {
+    background-color: #696cad;
+    color: #fff;
+}
+.collab-1 p {
+    font-size: 20px;
+    line-height: 2.5rem;
+    padding-bottom: 5rem;
+}
+.collaborate-img-1 {
+    width: 40%;
+    height: 500px;
+    background: url(https://altschoolafrica.com/_next/static/images/partner-983c3fa1e979a435bfde13f1c9390af2.png) no-repeat;
+    object-fit: cover;
+    background-size: auto;
+}
+.product-info-1 {
+    padding-top: 7rem;
+    text-align: center;
+    padding-bottom: 5rem;
+    background-color: #fbe4d1;
+}
+
+.product-info-1 h2 {
+    font-size: 30px;
+}
+
+.product-info-1 p {
+    font-size: 18px;
+    line-height: 3rem;
+}
+.product-class-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    background-color: #fbe4d1;
+}
+
+.boxes {
+    width: 200px;
+    height: 70px;
+    box-shadow: 0 0 1px 1px #000;
+    background: #fafaff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1.5rem;
+    cursor: pointer;
+}
+
+.product-class-1 .boxes.active {
+    background: #6a6ff5;
+    color: #fff;
+
+}
+
+.box-2:hover {
+    background: #000;
+    color: #fff;
+    transition: all 0.3s ease;
+
+}
+#jumpstart{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.start{
+    background-color: #6a6ff5;
+    color: #fff;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.start p{
+    font-size: 20px;
+    padding-right: 10rem;
+}
+
+
+
+
 
 
 
@@ -1169,5 +1265,38 @@ h6 {
     .steps h2 {
         font-size: 20px;
     }
+
+    /* collaborate with us */
+        .boxes {
+            width: 200px;
+            height: 50px;
+            box-shadow: 0 0 1px 1px #000;
+            background: #fafaff;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* collaborate */
+        #jumpstart .start{
+            display: block;
+        }
+        .start{
+            width: 100%;
+            padding-left: 1rem;
+            padding-right: 0px;
+            text-align: center;
+        }
+        .start h2{
+            font-size: 25px;
+        }
+        .start p{
+            padding-bottom: 3rem;
+            padding-left: 10px;
+            padding-right: 10px;
+        
+        }
+       
 
 }
