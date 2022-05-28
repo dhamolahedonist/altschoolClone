@@ -173,6 +173,7 @@ nav ul li a:hover {
     height: 400px;
 }
 
+
 .container {
     text-align: center;
     color: #fff;
@@ -253,13 +254,73 @@ nav ul li a:hover {
     transition: 1s;
     box-shadow: 0 10px 10px #1b1b1b;
 }
+/* overflow */
+#container-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10rem;
+    background: #000;
+    max-width: 100%;
+    min-height: 650px;
+}
+.contain-element {
+    display: flex;
+    gap: 10rem;
+    height: 325px;
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 20px;
+}
+.contain-element h5{
+    padding-bottom: 5rem;
+}
+.img-content {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+}
+.wrap-text {
+    /* width: 60%; */
+    /* height: 400px; */
+    color: #fff;
+    /* padding-top: 1rem;
+    padding-left: 3rem; */
+}
+.wrap-text p{
+    line-height: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+.wrap-text h2{
+    margin-top: 6rem;
+}
+.wrap-text .btn {
+    background-color: #696cad;
+    color: #fff;
+    padding: 20px 80px;
+}
+.wrap-text span{
+    vertical-align: bottom;
+}
+.wrap-content {
+    width: 100%;
+    overflow-y: auto;
+}
+.wrap-content::-webkit-scrollbar {
+    display: none;
+}
+/* #container-item{
+    background: #000;
+    max-width: 100%;
+    min-height: 600px;
 
+}
 .contain-item {
     display: flex;
     gap: 10rem;
     height: 325px;
-    margin-top: 5rem;
-    background: #000;
+    margin-top: 5rem; 
     color: #fff;
     font-size: 20px;
 }
@@ -267,7 +328,7 @@ nav ul li a:hover {
 .contain-item h2 {
     margin-left: 10rem;
     margin-top: 4rem;
-}
+} */
 
 .contain-item p {
     line-height: 3.2rem;
@@ -1139,6 +1200,47 @@ h6 {
     #contain-element {
         background: #fff6ee;
     }
+    /* overflow */
+        #container-content .contain-element {
+            flex-flow: column;
+            height: 100%;
+            padding-bottom: 7rem;
+            padding-left: 2rem;
+        }
+        #container-content h2{
+            font-size: 25px;
+        }
+         #container-content p {
+            font-size: 20px;
+         }
+    
+        .wrap-content {
+            align-items: unset;
+            overflow-y: auto;
+            height: 480px;
+        }
+        .contain-element h5{
+            padding-left: 2rem;
+        }
+    
+        .contain-element .img-content {
+            width: 300px;
+            height: 300px;
+            margin: 0px auto;
+        }
+    
+        .wrap-content {
+            text-align: left;
+        }
+    
+        .contain-element h2 {
+            margin-left: 1rem;
+            margin-top: 4rem;
+        }
+    
+        .wrap-content::-webkit-scrollbar {
+            display: none;
+        }
 
     .box {
         background: #fff6ee;
