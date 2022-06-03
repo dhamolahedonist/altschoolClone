@@ -45,7 +45,7 @@
             <a href="tuition.html">Tution</a>
           </li>
           <li class="nav-item">
-            <a href="#">FAQ</a>
+            <a href="#faq" class="scroll-link">FAQ</a>
           </li>
           <li class="nav-item">
             <a href="story.html">Our Story</a>
@@ -150,27 +150,49 @@
       </div>
     </section>
     <section>
-      <div class="product-school">
-        <h2>Specialise in any of the following</h2>
-        <div class="product-class">
-          <div class="boxes box-1 active">Product Design</div>
-          <div class="boxes box-2">Product Marketing</div>
-          <div class="boxes box-3">Product Management</div>
+      <article class="about">
+        <div class="product-school">
+          <h2>Specialise in any of the following</h2>
+          <div class="product-class">
+            <div class="boxes box-1 active" data-id="productDesign">
+              Product Design
+            </div>
+            <div class="boxes box-2" data-id="productMarketing">
+              Product Marketing
+            </div>
+            <div class="boxes box-3" data-id="productManagement">
+              Product Management
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="container-item">
-        <h2>Product Design</h2>
-        <p>
-          Product designers are creative masterminds. This course will<br />
-          take you through the basic principles of designing products<br />
-          that address user needs and align with business goals. Product<br />
-          design involves the entire process of researching and<br />
-          identifying user problems, crafting a solution to address these<br />
-          deficiencies and validating this solution with the end-users
-        </p>
-      </div>
+        <div class="container-item active" id="productDesign">
+          <h2>Product Design</h2>
+          <p>
+            Product designers are creative masterminds. This course will<br />
+            take you through the basic principles of designing products<br />
+            that address user needs and align with business goals. Product<br />
+            design involves the entire process of researching and<br />
+            identifying user problems, crafting a solution to address these<br />
+            deficiencies and validating this solution with the end-users
+          </p>
+        </div>
+        <div class="container-item" id="productMarketing">
+          <h2>Product Marketing</h2>
+          <p>
+            Product designers are creative masterminds. This course will<br />
+            take you through the basic principles of designing products<br />
+            that address user needs and align with business goals.
+          </p>
+        </div>
+        <div class="container-item" id="productManagement">
+          <h2>Product Management</h2>
+          <p>
+            Product design involves the entire process of researching and<br />
+            identifying user problems, crafting a solution to address these<br />
+            deficiencies and validating this solution with the end-users.
+          </p>
+        </div>
+      </article>
     </section>
     <section id="about">
       <h5>In Affiliation with</h5>
@@ -281,7 +303,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="faq">
       <div class="faq">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-1">
@@ -468,7 +490,7 @@
             <ul>
               <h2>Resources</h2>
               <li><a href="#">Privacy and Policy</a></li>
-              <li><a href="#">FAQs</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
         </div>

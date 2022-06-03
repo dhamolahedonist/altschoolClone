@@ -41,10 +41,11 @@ menuToggle.addEventListener('click', function() {
 
 
 
+
+
 const navBar = document.getElementById('nav');
 const activeClass = document.querySelector('.active')
 const boxImage = document.querySelector('.box-image')
-console.log(boxImage)
 window.addEventListener('scroll', function() {
     const scrollHeight = window.pageYOffset;
     const navHeight = navBar.getBoundingClientRect().height;
@@ -63,18 +64,79 @@ window.addEventListener('scroll', function() {
   
 })
 
-menuToggle.addEventListener('click', function(){
-    navBar.style.color = 'blue';
+// menuToggle.addEventListener('click', function(){
+//     navBar.style.color = 'blue';
+// })
+
+const scrollLink = document.querySelectorAll('.scroll-link');
+scrollLink.forEach(function(link) {
+    link.addEventListener('click', function(e){
+        e.preventDefault();
+
+
+        const id = e.currentTarget.getAttribute('href').slice(1);
+        const element = document.getElementById(id);
+
+        const navHeight = navBar.getBoundingClientRect().height
+        const containerHeight = links.getBoundingClientRect().height
+        const fixedNav = navBar.classList.contains('fixed-nav')
+        let position = element.offsetTop - navHeight;
+
+        if(!fixedNav){
+            position = position - navHeight;
+        }
+        window.scrollTo({
+            left: 0,
+            top: position,
+        });
+
+    })
+})
+const collaborate = document.querySelector('.collaborate-item')
+const collaborateBox = document.querySelectorAll('.collaborate')
+const boxItem = document.querySelectorAll('.boxes')
+
+collaborate.addEventListener('click', function(e){
+    const id = e.target.dataset.id;
+
+    boxItem.forEach(function(content){
+        content.classList.remove('active')
+        e.target.classList.add('active')
+    });
+
+    collaborateBox.forEach(function(list){
+        list.classList.remove('active')
+    })
+    const component = document.getElementById(id)
+    component.classList.add('active')
+
+  
 })
 
 
-// const age = 27
-// console.log(nezzyAge(age))
 
-// function nezzyAge(age){
-//     if(nezzyAge == age){
-//         return true;
-//     }else 
-//     return false;
-// }
+
+
+const boxes = document.querySelectorAll('.boxes');
+const containerItem = document.querySelectorAll('.container-item');
+const about = document.querySelector('.about');
+
+about.addEventListener('click', function(e){
+    const id = e.target.dataset.id;
+
+    // romove active from all boxes
+    boxes.forEach(function(box){
+        box.classList.remove('active');
+        e.target.classList.add('active')
+    });
+    // hide other items
+    containerItem.forEach(function(item){
+        item.classList.remove('active')
+    })
+    const element = document.getElementById(id)
+    element.classList.add('active')
+});
+
+
+
 

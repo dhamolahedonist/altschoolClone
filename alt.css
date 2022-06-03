@@ -16,6 +16,7 @@
 html {
     /* 62.5% of 16px =10px */
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -385,7 +386,7 @@ nav ul li a:hover {
 }
 
 .boxes {
-    width: 250px;
+    width: 100%;
     height: 70px;
     box-shadow: 0 0 1px 1px #000;
     background: #fafaff;
@@ -405,6 +406,7 @@ nav ul li a:hover {
     background: #6a6ff5;
     color: #fff;
     transition: all 0.3s ease;
+   
 
 }
 
@@ -424,6 +426,21 @@ nav ul li a:hover {
     font-size: 20px;
     margin-bottom: 3rem;
 }
+/* edited */
+.container-item{
+    display: none;
+}
+.container-item.active{
+    display: block;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 300px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 3rem;
+}
+/* edited */
 
 .container-item h2 {
     margin-left: 10rem;
@@ -741,6 +758,57 @@ nav ul li a:hover {
     background: url(https://altschoolafrica.com/_next/static/images/collab-f2eb368cd3bfe1f1437509e2d75bafaa.png) no-repeat;
     object-fit: cover;
     background-size: auto;
+}
+
+
+/* second img */
+.collab-container-1 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff6ee;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.collaborate-img-2 {
+    width: 40%;
+    height: 400px;
+    background: url(https://altschoolafrica.com/_next/static/images/sponsor-aad23042415f68349c4f3b532bf33c20.png) no-repeat;
+    object-fit: cover;
+    background-size: auto;
+}
+.collab-2 {
+    background-color: #000;
+    width: 60%;
+    height: 400px;
+    color: #fff;
+    padding-top: 7rem;
+    padding-left: 3rem;
+}
+.collab-2 p {
+    font-size: 20px;
+    line-height: 2.5rem;
+    padding-bottom: 5rem;
+    width: 90%;
+}
+.collab-2 h2{
+    font-size: 30px;
+}
+.collaborate {
+    display: none;
+}
+
+.collaborate.active {
+    display: flex;
+    grid-template-columns: 2fr 2fr;
+    height: 400px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 3rem;
 }
 
 #footer .list {
@@ -1278,12 +1346,29 @@ h6 {
     .product-school .boxes {
         display: none;
     }
+ 
 
-    .container-item {
+    /* .container-item {
         display: block;
         height: auto;
         margin-bottom: 3rem;
-    }
+    } */
+           /* edited */
+           /* .container-item {
+               display: none;
+           } */
+    
+           .container-item.active {
+               display: none;
+               grid-template-columns: 2fr 2fr;
+               height: 300px;
+               background: #000;
+               color: #fff;
+               font-size: 20px;
+               margin-bottom: 3rem;
+           }
+    
+           /* edited */
 
     .container-item h2 {
         display: block;
@@ -1515,6 +1600,9 @@ h6 {
         .collaborate-img-1 {
             display: none;
         }
+        .collaborate-img-2 {
+            display: none;
+        }
         .collab-1 {
             background-color: #271871;
             width: 350px;
@@ -1531,7 +1619,28 @@ h6 {
         .collab-1 p {
             font-size: 18px;
         }
-
+        .collaborate-img-2 {
+            display: none;
+        }
+          .collab-2 {
+              background-color: #000;
+              width: 350px;
+              height: auto;
+              color: #fff;
+              padding-top: 7rem;
+              padding: 3rem;
+              margin: 0;
+              flex-wrap: wrap;
+          }
+    
+          .collab-2 h2 {
+              font-size: 20px;
+          }
+    
+          .collab-2 p {
+              font-size: 18px;
+              width: auto;
+          }
     /* Career */
         .product-info-2 {
             display: block;
