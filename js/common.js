@@ -92,50 +92,7 @@ scrollLink.forEach(function(link) {
 
     })
 })
-const collaborate = document.querySelector('.collaborate-item')
-const collaborateBox = document.querySelectorAll('.collaborate')
-const boxItem = document.querySelectorAll('.boxes')
 
-collaborate.addEventListener('click', function(e){
-    const id = e.target.dataset.id;
-
-    boxItem.forEach(function(content){
-        content.classList.remove('active')
-        e.target.classList.add('active')
-    });
-
-    collaborateBox.forEach(function(list){
-        list.classList.remove('active')
-    })
-    const component = document.getElementById(id)
-    component.classList.add('active')
-
-  
-})
-
-
-
-
-
-const boxes = document.querySelectorAll('.boxes');
-const containerItem = document.querySelectorAll('.container-item');
-const about = document.querySelector('.about');
-
-about.addEventListener('click', function(e){
-    const id = e.target.dataset.id;
-
-    // romove active from all boxes
-    boxes.forEach(function(box){
-        box.classList.remove('active');
-        e.target.classList.add('active')
-    });
-    // hide other items
-    containerItem.forEach(function(item){
-        item.classList.remove('active')
-    })
-    const element = document.getElementById(id)
-    element.classList.add('active')
-});
 
 
 

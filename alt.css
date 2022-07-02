@@ -720,6 +720,14 @@ nav ul li a:hover {
     max-width: 1700px;
     margin: 0 10rem;
 }
+.collaborate-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 10rem;
+}
 
 .collab-container {
     min-height: 100vh;
@@ -797,11 +805,11 @@ nav ul li a:hover {
 .collab-2 h2{
     font-size: 30px;
 }
-.collaborate {
+.collaborate-1 {
     display: none;
 }
 
-.collaborate.active {
+.collaborate-1.active {
     display: flex;
     grid-template-columns: 2fr 2fr;
     height: 400px;
