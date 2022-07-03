@@ -1,8 +1,8 @@
-const header = document.querySelector('nav')
-   if(header){
-       header.style.background = '#000';
-   }
-colorLinks("#FFF");
+// const header = document.querySelector('nav')
+//    if(header){
+//        header.style.background = '#000';
+//    }
+// colorLinks("#FFF");
 
 function colorLinks(hex)
 {
